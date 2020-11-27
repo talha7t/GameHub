@@ -1,0 +1,104 @@
+/*---------------------Next Generation Gaming----------------*/
+.next-gen-gaming {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  padding: 10vh 5vw;
+}
+
+.next-gen-gaming .gaming-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.next-gen-gaming .nextgen-gaming-paragraph {
+  color: #636363;
+  font-size: 1rem;
+  line-height: 1.5;
+  word-spacing: 2px;
+  margin-bottom: 1.5rem;
+}
+
+.next-gen-gaming .nextgen-image-section {
+  height: 100%;
+  width: 100%;
+}
+
+.next-gen-gaming .nextgen-image-section img {
+  height: 100%;
+  width: 100%;
+}
+
+.next-gen-gaming .nextgen-joinus {
+  background-color: #dd3e3e;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 1rem 2.5rem;
+  text-transform: uppercase;
+}
+
+/*-----------------VISION-MISSION--------------------------*/
+.vision-mission {
+  background-color: #f6f8f9;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 5rem;
+  grid-row-gap: 3rem;
+  padding: 10vh 10vw;
+}
+
+.vision-content {
+  padding: 0 5px;
+}
+
+.vision-heading,
+.mission-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.fa-eye,
+.fa-heart {
+  color: #dd3e3e;
+  padding-right: 0.3rem;
+}
+
+.vision-paragraph,
+.mission-paragraph {
+  color: #636363;
+  font-size: 1rem;
+  word-spacing: 2px;
+  line-height: 1.8;
+}
+
+@media (max-width: 576px) {
+  .next-gen-gaming {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  .vision-mission {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+/*# sourceMappingURL=vision-nextgen.css.map */

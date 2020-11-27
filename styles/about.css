@@ -1,0 +1,153 @@
+/*--------------SubHero Section-------------------*/
+.sub-hero-section {
+  height: 45vh;
+  background: url("../images/hero-img.jpg") top no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.page-info {
+  color: #fff;
+  padding: 0 8vw 5%;
+}
+
+.page-heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 43px;
+  padding-bottom: 1rem;
+}
+
+.current-page,
+.home-link,
+.arrow-icon .fa-chevron-right {
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.home-link {
+  padding-right: 0.4rem;
+}
+
+.current-page {
+  padding-left: 0.4rem;
+}
+
+/*--------------Board Members Section------------------*/
+.board-members-section {
+  padding: 10vh 10vw;
+  margin-bottom: 10vh;
+}
+
+.board-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0;
+}
+
+.board-members-text {
+  color: #dd3e3e;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+.board-members-heading {
+  color: #252525;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  line-height: 48px;
+  text-align: center;
+}
+
+.board-members-cards {
+  margin-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 50px;
+}
+
+.board-member-card {
+  -webkit-box-shadow: 0px 15px 60px rgba(76, 74, 74, 0.14);
+          box-shadow: 0px 15px 60px rgba(76, 74, 74, 0.14);
+  padding: 30px;
+  color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.member-image {
+  height: 10rem;
+  width: 10rem;
+  margin: 1rem 0rem 1.5rem;
+}
+
+.member-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.member-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 22px;
+  padding: 0.5rem 0;
+}
+
+.member-position {
+  color: #dd3e3e;
+  font-size: 1rem;
+  line-height: 28px;
+}
+
+/*----------MEDIA QUERIES----------------*/
+@media (max-width: 992px) {
+  .board-members-cards {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .board-members-cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+}
+/*# sourceMappingURL=about.css.map */

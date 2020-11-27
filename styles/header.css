@@ -116,7 +116,7 @@ body {
           justify-content: space-between;
 }
 
-.navbar__top {
+.navbar-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,19 +126,19 @@ body {
   padding: 0 16px;
 }
 
-.navbar__logo {
+.navbar-logo {
   height: 4rem;
   width: 4rem;
   cursor: pointer;
 }
 
-.navbar__logo img {
+.navbar-logo img {
   border-radius: 50%;
   height: 100%;
   width: 100%;
 }
 
-.navbar__toggle {
+.navbar-toggle {
   font-size: 2em;
   cursor: pointer;
 }
@@ -146,15 +146,18 @@ body {
 .navigation {
   height: 0;
   overflow: hidden;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
 }
 
-.navigation__item {
+.navigation-item {
   font-weight: 700;
   font-size: 0.85rem;
   padding: 0 16px;
   text-transform: uppercase;
+}
+
+.navigation-item a {
+  color: #252525;
+  text-decoration: none;
 }
 
 .navigation-visible {
@@ -195,7 +198,7 @@ body {
   .header {
     display: none;
   }
-  .navbar__toggle {
+  .navbar-toggle {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -203,7 +206,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .navigation__item {
+  .navigation-item {
     padding: 0.5rem 1rem;
     border-bottom: 1px solid #f1f1f1;
     color: #252525;
@@ -221,22 +224,22 @@ body {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .navbar__top, .navbar__bottom {
+  .navbar-top, .navbar-bottom {
     display: block;
   }
-  .navbar__toggle {
+  .navbar-toggle {
     display: none;
   }
   .navigation {
     display: block;
     height: auto;
   }
-  .navigation__item {
+  .navigation-item {
     display: inline-block;
     -webkit-transition: color 0.3s ease;
     transition: color 0.3s ease;
   }
-  .navigation__item:hover {
+  .navigation-item a:hover {
     color: #dd3e3e;
     cursor: pointer;
   }
