@@ -72,3 +72,19 @@
 .fill-recursive-fire * {
   fill: #ff2934;
 }
+
+/*----------------MEDIA QUERIES---------------*/
+
+@media (max-width: 992px) {
+  .partners-section {
+    grid-template-columns: repeat(2, 30vw);
+    grid-row-gap: 5vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .partners-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
