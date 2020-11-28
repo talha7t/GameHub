@@ -1,0 +1,74 @@
+/*--------------SubHero Section-------------------*/
+.sub-hero-section {
+  height: 45vh;
+  background: url("../images/hero-img.jpg") top no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.page-info {
+  color: #fff;
+  padding: 0 8vw 5%;
+}
+
+.page-heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 43px;
+  padding-bottom: 1rem;
+}
+
+.current-page,
+.home-link,
+.arrow-icon .fa-chevron-right {
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.home-link {
+  padding-right: 0.4rem;
+}
+
+.current-page {
+  padding-left: 0.4rem;
+}
+
+/*--------------PARTNERS SECTION--------------------*/
+.partners-section {
+  background-color: #f9f9ff;
+  padding: 10vh 5vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: repeat(4, 15vw);
+  grid-template-columns: repeat(4, 15vw);
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 30px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.partners-section svg {
+  width: 100%;
+}
+
+.partner-logo {
+  cursor: pointer;
+}
+
+.fill-recursive-fire,
+.fill-recursive-fire * {
+  fill: #ff2934;
+}
