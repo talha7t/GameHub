@@ -116,6 +116,10 @@ body {
   justify-content: space-between;
 }
 
+#active {
+  color: #dd3e3e;
+}
+
 .navbar-top {
   display: -webkit-box;
   display: -ms-flexbox;
