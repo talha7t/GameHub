@@ -19,17 +19,3 @@ hamMenu.addEventListener('click', ()=> {
   }
   
 }, {passive: true})
-
-window.addEventListener('scroll', ()=> {
-  let scroll = window.scrollY;
-  if(scroll > 10) {
-    gsap.set('.header', {transformOrigin: '50% bottom'});
-
-    gsap.to('.header', {height: 0, duration:0.5, ease: 'power2.out'});
-    //  use from to here
-    gsap.to('.navbar', {position: 'fixed', width: '100%', duration: 0.5, top: '0', zIndex: '2'});
-  } else {
-    gsap.to('.header', {height: 'auto', duration: 0.5, ease: 'power2.out'});
-    gsap.to('.navbar', {position: 'static'})
-  }
-})
