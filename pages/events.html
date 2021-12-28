@@ -1,352 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <!----------------style sheets---------->
-    <link rel="stylesheet" href="../styles/header-footer.css">
-    <link rel="stylesheet" href="../styles/events-list.css">
-    <link rel="stylesheet" href="../styles/event.css">
-    <link rel="stylesheet" href="../styles/inauguration.css">
-    <link rel="stylesheet" href="../styles/contact.css">
-    
+    <link rel="stylesheet" href="../styles/commons.css" />
+    <link rel="stylesheet" href="../styles/events-list.css" />
+    <link rel="stylesheet" href="../styles/event.css" />
+    <link rel="stylesheet" href="../styles/inauguration.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+
     <!-- font awesome -->
-    
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+
     <!-- Google fonts -->
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet">
-</head>
-<body>
-    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--------------------- Event Modal -------------------->
+    <div id="event-modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>GameHub</h2>
+        </div>
+        <div class="modal-body">
+          <p class="model-content-p1">Thanks for Visiting our Website</p>
+          <p class="model-content-p2">There are no Events cuurently</p>
+        </div>
+        <!-- <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div> -->
+      </div>
+    </div>
+    <!--------------------- Membership Modal -------------------->
+    <div id="membership-modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>GameHub</h2>
+        </div>
+        <div class="modal-body">
+          <p class="model-content-p1">Thanks for Visiting our Website</p>
+          <p class="model-content-p2">Memberships are currently closed</p>
+        </div>
+      </div>
+    </div>
     <!------------------------HEADER------------------------>
     <header class="header">
-        <div class="header-social-icons">
-            <i class="header-social-icon fab fa-facebook-f"></i>
-            <i class="header-social-icon fab fa-twitter"></i>
-            <i class="header-social-icon fab fa-instagram"></i>
-            <i class="header-social-icon fab fa-linkedin-in"></i>
-            <i class="header-social-icon far fa-envelope"></i>
-        </div>
-        <div class="upcoming-event-info">
-            <span class="upcoming-event-text">Upcoming Event:</span>
-            <span class="upcoming-event-days">
-                <span class="event-days-time">00</span>
-                <span class="event-days">Days</span>
-            </span>
-            <span class="upcoming-event-hours">
-                <span class="event-hours-time">00</span>
-                <span class="event-hours">Hours</span>
-            </span>
-            <span class="upcoming-event-mins">
-                <span class="event-mins-time">00</span>
-                <span class="event-mins">Mins</span>
-            </span>
-            <span class="upcoming-event-secs">
-                <span class="event-secs-time">00</span>
-                <span class="event-secs">Secs</span>
-            </span>
-            <span class="upcoming-event-link">Event Link</span>
-        </div>
+      <div class="header-social-icons">
+        <i class="header-social-icon fab fa-facebook-f"></i>
+        <i class="header-social-icon fab fa-twitter"></i>
+        <i class="header-social-icon fab fa-instagram"></i>
+        <i class="header-social-icon fab fa-linkedin-in"></i>
+        <i class="header-social-icon far fa-envelope"></i>
+      </div>
+      <div class="upcoming-event-info">
+        <span class="upcoming-event-text">Upcoming Event:</span>
+        <span class="upcoming-event-days">
+          <span class="event-days-time">00</span>
+          <span class="event-days">Days</span>
+        </span>
+        <span class="upcoming-event-hours">
+          <span class="event-hours-time">00</span>
+          <span class="event-hours">Hours</span>
+        </span>
+        <span class="upcoming-event-mins">
+          <span class="event-mins-time">00</span>
+          <span class="event-mins">Mins</span>
+        </span>
+        <span class="upcoming-event-secs">
+          <span class="event-secs-time">00</span>
+          <span class="event-secs">Secs</span>
+        </span>
+        <span class="upcoming-event-link event-link">Event Link</span>
+      </div>
     </header>
-    
+
     <!------------------------NAVBAR-------------------------->
-    
+
     <nav class="navbar">
-    
-        <div class="navbar-top">
-            <div class='navbar-logo'>
-                <a href="../index.html">
-                    <img src="../images/logo1.jpeg" alt="">
-                </a>
-            </div>
-            <div class="navbar-toggle">☰</div>
+      <div class="navbar-top">
+        <div class="navbar-logo">
+          <a href="index.html">
+            <img src="../images/logo1.jpeg" alt="" />
+          </a>
         </div>
-    
-        <div class="navbar-bottom">
-            <ul id="navigation" class="navigation">
-                <li class="navigation-item"><a href="../index.html">Home</a> </li>
-                <li class="navigation-item"><a href="./about.html">About Us</a></li>
-                <li class="navigation-item"><a href="./team.html">Team</a></li>
-                <li class="navigation-item"><a id="active" href="./events.html">Event</a></li>
-                <li class="navigation-item"><a href="./partner.html">Partner</a></li>
-                <li class="navigation-item"><a href="./contact-us.html">Contact</a></li>
-            </ul>
-        </div>
-    
-        <div class="membership-drive">
-            <span class="membership-drive-text">Membership Drive</span>
-        </div>
-    
+        <div class="navbar-toggle">☰</div>
+      </div>
+
+      <div class="navbar-bottom">
+        <ul id="navigation" class="navigation">
+          <li class="navigation-item active">
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="navigation-item">
+            <a href="./about.html">About Us</a>
+          </li>
+          <li class="navigation-item"><a href="./team.html">Team</a></li>
+          <li class="navigation-item">
+            <a id="active" href="./events.html">Event</a>
+          </li>
+          <li class="navigation-item">
+            <a href="./partner.html">Partner</a>
+          </li>
+          <li class="navigation-item">
+            <a href="./contact-us.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="membership-drive membership-link">
+        <span class="membership-drive-text membership-link"
+          >Membership Drive</span
+        >
+      </div>
     </nav>
-    
+
     <!---------------Sub-Hero-Section------------->
-    
+
     <section class="sub-hero-section">
-        <div class="page-info">
-            <h2 class="page-heading">Event List</h2>
-            <div class="links">
-                <a class="home-link" href="../index.html">Home</a>
-                <span class="arrow-icon"> <i class="fas fa-chevron-right"></i> </span>
-                <span class="current-page">Event List</span>
-            </div>
+      <div class="page-info">
+        <h2 class="page-heading">Event List</h2>
+        <div class="links">
+          <a class="home-link" href="../index.html">Home</a>
+          <span class="arrow-icon"> <i class="fas fa-chevron-right"></i> </span>
+          <span class="current-page">Event List</span>
         </div>
+      </div>
     </section>
 
     <!----------------INAUGURATION SECTION-------------------->
-    
+
     <section class="inauguration">
-        <div class="inauguration-date-info">
-            <span class="inauguration-calendar">
-                <span class="date">12</span>
-                <span class="month">July</span>
-            </span>
-    
-            <div class="date-more-info">
-                <h2 class="inauguration-text box1">Inauguration Ceremony</h2>
-                <div class="inauguration-calendar-info box2">
-                    <i class="fas fa-calendar"></i>
-                    <span class="event-timing">8:00 PM — 9:00 PM </span>
-                </div>
-                <div class="event-premises box3">
-                    <i class="fas fa-map-marker"></i>
-                    <span class="premises-text">Virtually (Live on facebook)</span>
-                </div>
-            </div>
-    
+      <div class="inauguration-date-info">
+        <span class="inauguration-calendar">
+          <span class="date">12</span>
+          <span class="month">July</span>
+        </span>
+
+        <div class="date-more-info">
+          <h2 class="inauguration-text box1">Inauguration Ceremony</h2>
+          <div class="inauguration-calendar-info box2">
+            <i class="fas fa-calendar"></i>
+            <span class="event-timing">8:00 PM — 9:00 PM </span>
+          </div>
+          <div class="event-premises box3">
+            <i class="fas fa-map-marker"></i>
+            <span class="premises-text">Virtually (Live on facebook)</span>
+          </div>
         </div>
-        <div class="inauguration-time-info">
-            <div class="remaining-time">
-                <span class="inauguration-event-days">
-                    <span class="inauguration-days-time">00</span>
-                    <span class="inauguration-days">Days</span>
-                </span>
-                <span class="inauguration-event-hours">
-                    <span class="inauguration-hours-time">00</span>
-                    <span class="inauguration-hours">Hours</span>
-                </span>
-                <span class="inauguration-event-mins">
-                    <span class="inauguration-mins-time">00</span>
-                    <span class="inauguration-mins">Mins</span>
-                </span>
-                <span class="inauguration-event-secs">
-                    <span class="inauguration-secs-time">00</span>
-                    <span class="inauguration-secs">Secs</span>
-                </span>
-            </div>
-    
-            <div class="inauguration-event-link">
-                <button class="event-link-button">Event Link</button>
-            </div>
+      </div>
+      <div class="inauguration-time-info">
+        <div class="remaining-time">
+          <span class="inauguration-event-days">
+            <span class="inauguration-days-time">00</span>
+            <span class="inauguration-days">Days</span>
+          </span>
+          <span class="inauguration-event-hours">
+            <span class="inauguration-hours-time">00</span>
+            <span class="inauguration-hours">Hours</span>
+          </span>
+          <span class="inauguration-event-mins">
+            <span class="inauguration-mins-time">00</span>
+            <span class="inauguration-mins">Mins</span>
+          </span>
+          <span class="inauguration-event-secs">
+            <span class="inauguration-secs-time">00</span>
+            <span class="inauguration-secs">Secs</span>
+          </span>
         </div>
+
+        <div class="inauguration-event-link">
+          <button class="event-link-button event-link">Event Link</button>
+        </div>
+      </div>
     </section>
 
     <!------------------EVENTS-------------------->
-    
+
     <section class="events">
-        <div class="events-header">
-            <div class="event-headings">
-                <h3 class="event-heading">
-                    Our Events
-                </h3>
-                <h2 class="our-work">Look at our work!</h2>
-            </div>
+      <div class="events-header">
+        <div class="event-headings">
+          <h3 class="event-heading">Our Events</h3>
+          <h2 class="our-work">Look at our work!</h2>
         </div>
-    
-        <div class="event-container">
-            <div class="event-thumbnail">
-                <img loading="lazy" src="../images/pubg-event-01.jpg" alt="">
-            </div>
-    
-            <div class="event-details">
-                <div class="event-info">
-                    <div class="event-calendar">
-                        <span class="event-calendar-date">
-                            09
-                        </span>
-                        <span class="event-calendar-monthyear">May, 2020</span>
-                    </div>
-    
-                    <h2 class="events-event-heading">Pubg Mobile Festa</h2>
-                    <div class="event-more-info">
-                        <span><i class="fas fa-user host-icon"></i> <span class="event-host-name">Unkown</span></span>
-                        <span><i class="fas fa-calendar calendar-icon"></i> <span class="events-event-timing">Saturday, 9:00
-                                PM (PST)</span></span>
-                        <span><i class="fas fa-map-marker marker-icon"></i><span
-                                class="events-event-premises">Virtually</span></span>
-                    </div>
-                </div>
-    
-                <div class="event-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, laudantium fugit. Quia suscipit autem
-                    corrupti sint velit iusto ducimus odit.
-                </div>
-    
-                <div class="events-event-link">
-                    <button class="individual-event-link">Event Link</button>
-                </div>
-            </div>
-        </div>
-    
-        <div class="event-container">
-            <div class="event-thumbnail">
-                <img loading="lazy" src="../images/tekken-7-asia-tour.jpg" alt="">
-            </div>
-    
-            <div class="event-details">
-                <div class="event-info">
-                    <div class="event-calendar">
-                        <span class="event-calendar-date">
-                            20
-                        </span>
-                        <span class="event-calendar-monthyear">Sep, 2020</span>
-                    </div>
-    
-                    <h2 class="events-event-heading">Tekken Asia Tour</h2>
-                    <div class="event-more-info">
-                        <span><i class="fas fa-user host-icon"></i> <span class="event-host-name">Mishima Family</span></span>
-                        <span><i class="fas fa-calendar calendar-icon"></i> <span class="events-event-timing">Saturday, 9:00
-                                PM
-                                (PST)</span></span>
-                        <span><i class="fas fa-map-marker marker-icon"></i><span
-                                class="events-event-premises">Virtually</span></span>
-                    </div>
-                </div>
-    
-                <div class="event-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, laudantium fugit. Quia suscipit autem
-                    corrupti sint velit iusto ducimus odit.
-                </div>
-    
-                <div class="events-event-link">
-                    <button class="individual-event-link">Event Link</button>
-                </div>
-            </div>
+      </div>
+
+      <div class="event-container">
+        <div class="event-thumbnail">
+          <img loading="lazy" src="../images/pubg-event-01.jpg" alt="" />
         </div>
 
-        <div class="event-container">
-            <div class="event-thumbnail">
-                <img loading="lazy" src="../images/C.O.D-2020-wcl.jpg" alt="">
+        <div class="event-details">
+          <div class="event-info">
+            <div class="event-calendar">
+              <span class="event-calendar-date"> 09 </span>
+              <span class="event-calendar-monthyear">May, 2020</span>
             </div>
-        
-            <div class="event-details">
-                <div class="event-info">
-                    <div class="event-calendar">
-                        <span class="event-calendar-date">
-                            10
-                        </span>
-                        <span class="event-calendar-monthyear">Nov, 2020</span>
-                    </div>
-        
-                    <h2 class="events-event-heading">C.O.D World Champions</h2>
-                    <div class="event-more-info">
-                        <span><i class="fas fa-user host-icon"></i> <span class="event-host-name">War Lord, World Government</span></span>
-                        <span><i class="fas fa-calendar calendar-icon"></i> <span class="events-event-timing">Monday, 9:00
-                                AM
-                                (PST)</span></span>
-                        <span><i class="fas fa-map-marker marker-icon"></i><span
-                                class="events-event-premises">Virtually</span></span>
-                    </div>
-                </div>
-        
-                <div class="event-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, laudantium fugit. Quia suscipit autem
-                    corrupti sint velit iusto ducimus odit.
-                </div>
-        
-                <div class="events-event-link">
-                    <button class="individual-event-link">Event Link</button>
-                </div>
+
+            <h2 class="events-event-heading">Pubg Mobile Festa</h2>
+            <div class="event-more-info">
+              <span
+                ><i class="fas fa-user host-icon"></i>
+                <span class="event-host-name">Unkown</span></span
+              >
+              <span
+                ><i class="fas fa-calendar calendar-icon"></i>
+                <span class="events-event-timing"
+                  >Saturday, 9:00 PM (PST)</span
+                ></span
+              >
+              <span
+                ><i class="fas fa-map-marker marker-icon"></i
+                ><span class="events-event-premises">Virtually</span></span
+              >
             </div>
+          </div>
+
+          <div class="event-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+            laudantium fugit. Quia suscipit autem corrupti sint velit iusto
+            ducimus odit.
+          </div>
+
+          <div class="events-event-link">
+            <button class="individual-event-link event-link">Event Link</button>
+          </div>
         </div>
-    
-        <div class="event-container">
-            <div class="event-thumbnail">
-                <img loading="lazy" src="../images/nfs-rush.jpg" alt="">
-            </div>
-        
-            <div class="event-details">
-                <div class="event-info">
-                    <div class="event-calendar">
-                        <span class="event-calendar-date">
-                            28
-                        </span>
-                        <span class="event-calendar-monthyear">Nov, 2020</span>
-                    </div>
-        
-                    <h2 class="events-event-heading">Need For Speed - Rush</h2>
-                    <div class="event-more-info">
-                        <span><i class="fas fa-user host-icon"></i> <span class="event-host-name"> Dominic Torreto, Brian O'Conner, Shaw Brothers.
-                                </span></span>
-                        <span><i class="fas fa-calendar calendar-icon"></i> <span class="events-event-timing">Saturday, 12:00
-                                AM
-                                (PST)</span></span>
-                        <span><i class="fas fa-map-marker marker-icon"></i><span
-                                class="events-event-premises">Virtually</span></span>
-                    </div>
-                </div>
-        
-                <div class="event-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, laudantium fugit. Quia suscipit autem
-                    corrupti sint velit iusto ducimus odit.
-                </div>
-        
-                <div class="events-event-link">
-                    <button class="individual-event-link">Event Link</button>
-                </div>
-            </div>
+      </div>
+
+      <div class="event-container">
+        <div class="event-thumbnail">
+          <img loading="lazy" src="../images/tekken-7-asia-tour.jpg" alt="" />
         </div>
 
+        <div class="event-details">
+          <div class="event-info">
+            <div class="event-calendar">
+              <span class="event-calendar-date"> 20 </span>
+              <span class="event-calendar-monthyear">Sep, 2020</span>
+            </div>
+
+            <h2 class="events-event-heading">Tekken Asia Tour</h2>
+            <div class="event-more-info">
+              <span
+                ><i class="fas fa-user host-icon"></i>
+                <span class="event-host-name">Mishima Family</span></span
+              >
+              <span
+                ><i class="fas fa-calendar calendar-icon"></i>
+                <span class="events-event-timing"
+                  >Saturday, 9:00 PM (PST)</span
+                ></span
+              >
+              <span
+                ><i class="fas fa-map-marker marker-icon"></i
+                ><span class="events-event-premises">Virtually</span></span
+              >
+            </div>
+          </div>
+
+          <div class="event-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+            laudantium fugit. Quia suscipit autem corrupti sint velit iusto
+            ducimus odit.
+          </div>
+
+          <div class="events-event-link">
+            <button class="individual-event-link event-link">Event Link</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-container">
+        <div class="event-thumbnail">
+          <img loading="lazy" src="../images/C.O.D-2020-wcl.jpg" alt="" />
+        </div>
+
+        <div class="event-details">
+          <div class="event-info">
+            <div class="event-calendar">
+              <span class="event-calendar-date"> 10 </span>
+              <span class="event-calendar-monthyear">Nov, 2020</span>
+            </div>
+
+            <h2 class="events-event-heading">C.O.D World Champions</h2>
+            <div class="event-more-info">
+              <span
+                ><i class="fas fa-user host-icon"></i>
+                <span class="event-host-name"
+                  >War Lord, World Government</span
+                ></span
+              >
+              <span
+                ><i class="fas fa-calendar calendar-icon"></i>
+                <span class="events-event-timing"
+                  >Monday, 9:00 AM (PST)</span
+                ></span
+              >
+              <span
+                ><i class="fas fa-map-marker marker-icon"></i
+                ><span class="events-event-premises">Virtually</span></span
+              >
+            </div>
+          </div>
+
+          <div class="event-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+            laudantium fugit. Quia suscipit autem corrupti sint velit iusto
+            ducimus odit.
+          </div>
+
+          <div class="events-event-link">
+            <button class="individual-event-link event-link">Event Link</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-container">
+        <div class="event-thumbnail">
+          <img loading="lazy" src="../images/nfs-rush.jpg" alt="" />
+        </div>
+
+        <div class="event-details">
+          <div class="event-info">
+            <div class="event-calendar">
+              <span class="event-calendar-date"> 28 </span>
+              <span class="event-calendar-monthyear">Nov, 2020</span>
+            </div>
+
+            <h2 class="events-event-heading">Need For Speed - Rush</h2>
+            <div class="event-more-info">
+              <span
+                ><i class="fas fa-user host-icon"></i>
+                <span class="event-host-name">
+                  Dominic Torreto, Brian O'Conner, Shaw Brothers.
+                </span></span
+              >
+              <span
+                ><i class="fas fa-calendar calendar-icon"></i>
+                <span class="events-event-timing"
+                  >Saturday, 12:00 AM (PST)</span
+                ></span
+              >
+              <span
+                ><i class="fas fa-map-marker marker-icon"></i
+                ><span class="events-event-premises">Virtually</span></span
+              >
+            </div>
+          </div>
+
+          <div class="event-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+            laudantium fugit. Quia suscipit autem corrupti sint velit iusto
+            ducimus odit.
+          </div>
+
+          <div class="events-event-link">
+            <button class="individual-event-link event-link">Event Link</button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!---------------CONTACT SECTION----------------------->
-    
+
     <section class="contact-section">
-        <div class="contact-email-content">
-            <h2 class="email-heading">
-                Contact Us
-            </h2>
-    
-            <h5 class="contact-location">Lahore, Pakistan</h5>
-    
-            <p class="email-text">Email: <span class="email">info@gamehub.com</span></p>
-    
-        </div>
-    
-        <div class="map-section">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.561312067554!2d74.2968407146292!3d31.453741957577318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190145ae97af17%3A0x6d1f02b5cd2ab9f7!2sUniversity%20of%20Education%2C%20Lahore!5e0!3m2!1sen!2s!4v1606143341533!5m2!1sen!2s"
-                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0">
-            </iframe>
-        </div>
+      <div class="contact-email-content">
+        <h2 class="email-heading">Contact Us</h2>
+
+        <h5 class="contact-location">Lahore, Pakistan</h5>
+
+        <p class="email-text">
+          Email: <span class="email">info@gamehub.com</span>
+        </p>
+      </div>
+
+      <div class="map-section">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.561312067554!2d74.2968407146292!3d31.453741957577318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190145ae97af17%3A0x6d1f02b5cd2ab9f7!2sUniversity%20of%20Education%2C%20Lahore!5e0!3m2!1sen!2s!4v1606143341533!5m2!1sen!2s"
+          width="600"
+          height="450"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        >
+        </iframe>
+      </div>
     </section>
-    
+
     <!----------------FOOTER------------------->
-    
+
     <footer class="footer">
-        <div class="copyright-text">
-            Copyright © <span class="copyright-year">2020</span> All rights reserved | GameHub
-        </div>
-    
-        <div class="footer-icons">
-            <i class="footer-social-icon fab fa-facebook-f"></i>
-            <i class="footer-social-icon fab fa-twitter"></i>
-            <i class="footer-social-icon fab fa-linkedin-in"></i>
-            <i class="footer-social-icon fab fa-instagram"></i>
-            <i class="footer-social-icon far fa-envelope"></i>
-        </div>
+      <div class="copyright-text">
+        Copyright © <span class="copyright-year">2020</span> All rights reserved
+        | GameHub
+      </div>
+
+      <div class="footer-icons">
+        <i class="footer-social-icon fab fa-facebook-f"></i>
+        <i class="footer-social-icon fab fa-twitter"></i>
+        <i class="footer-social-icon fab fa-linkedin-in"></i>
+        <i class="footer-social-icon fab fa-instagram"></i>
+        <i class="footer-social-icon far fa-envelope"></i>
+      </div>
     </footer>
 
     <!-----------------scripts--------------->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="../scripts/index.js"></script>
-
-</body>
+    <script src="../scripts/modal.js"></script>
+  </body>
 </html>

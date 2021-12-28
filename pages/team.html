@@ -1,306 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <!----------------style sheets---------->
-    <link rel="stylesheet" href="../styles/header-footer.css">
-    <link rel="stylesheet" href="../styles/team.css">
-    <link rel="stylesheet" href="../styles/contact.css">
-    
+    <link rel="stylesheet" href="../styles/commons.css" />
+    <link rel="stylesheet" href="../styles/team.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+
     <!-- font awesome -->
-    
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+
     <!-- Google fonts -->
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet">
 
-</head>
-<body>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--------------------- Event Modal -------------------->
+    <div id="event-modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>GameHub</h2>
+        </div>
+        <div class="modal-body">
+          <p class="model-content-p1">Thanks for Visiting our Website</p>
+          <p class="model-content-p2">There are no Events cuurently</p>
+        </div>
+        <!-- <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div> -->
+      </div>
+    </div>
+    <!--------------------- Membership Modal -------------------->
+    <div id="membership-modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>GameHub</h2>
+        </div>
+        <div class="modal-body">
+          <p class="model-content-p1">Thanks for Visiting our Website</p>
+          <p class="model-content-p2">Memberships are currently closed</p>
+        </div>
+      </div>
+    </div>
     <!------------------------HEADER------------------------>
     <header class="header">
-        <div class="header-social-icons">
-            <i class="header-social-icon fab fa-facebook-f"></i>
-            <i class="header-social-icon fab fa-twitter"></i>
-            <i class="header-social-icon fab fa-instagram"></i>
-            <i class="header-social-icon fab fa-linkedin-in"></i>
-            <i class="header-social-icon far fa-envelope"></i>
-        </div>
-        <div class="upcoming-event-info">
-            <span class="upcoming-event-text">Upcoming Event:</span>
-            <span class="upcoming-event-days">
-                <span class="event-days-time">00</span>
-                <span class="event-days">Days</span>
-            </span>
-            <span class="upcoming-event-hours">
-                <span class="event-hours-time">00</span>
-                <span class="event-hours">Hours</span>
-            </span>
-            <span class="upcoming-event-mins">
-                <span class="event-mins-time">00</span>
-                <span class="event-mins">Mins</span>
-            </span>
-            <span class="upcoming-event-secs">
-                <span class="event-secs-time">00</span>
-                <span class="event-secs">Secs</span>
-            </span>
-            <span class="upcoming-event-link">Event Link</span>
-        </div>
+      <div class="header-social-icons">
+        <i class="header-social-icon fab fa-facebook-f"></i>
+        <i class="header-social-icon fab fa-twitter"></i>
+        <i class="header-social-icon fab fa-instagram"></i>
+        <i class="header-social-icon fab fa-linkedin-in"></i>
+        <i class="header-social-icon far fa-envelope"></i>
+      </div>
+      <div class="upcoming-event-info">
+        <span class="upcoming-event-text">Upcoming Event:</span>
+        <span class="upcoming-event-days">
+          <span class="event-days-time">00</span>
+          <span class="event-days">Days</span>
+        </span>
+        <span class="upcoming-event-hours">
+          <span class="event-hours-time">00</span>
+          <span class="event-hours">Hours</span>
+        </span>
+        <span class="upcoming-event-mins">
+          <span class="event-mins-time">00</span>
+          <span class="event-mins">Mins</span>
+        </span>
+        <span class="upcoming-event-secs">
+          <span class="event-secs-time">00</span>
+          <span class="event-secs">Secs</span>
+        </span>
+        <span class="upcoming-event-link event-link">Event Link</span>
+      </div>
     </header>
-    
+
     <!------------------------NAVBAR-------------------------->
-    
+
     <nav class="navbar">
-    
-        <div class="navbar-top">
-            <div class='navbar-logo'>
-                <a href="../index.html">
-                    <img src="../images/logo1.jpeg" alt="">
-                </a>
-            </div>
-            <div class="navbar-toggle">☰</div>
+      <div class="navbar-top">
+        <div class="navbar-logo">
+          <a href="index.html">
+            <img src="../images/logo1.jpeg" alt="" />
+          </a>
         </div>
-    
-        <div class="navbar-bottom">
-            <ul id="navigation" class="navigation">
-                <li class="navigation-item"><a href="../index.html">Home</a> </li>
-                <li class="navigation-item"><a href="./about.html">About Us</a></li>
-                <li class="navigation-item"><a id="active" href="./team.html">Team</a></li>
-                <li class="navigation-item"><a href="./events.html">Event</a></li>
-                <li class="navigation-item"><a href="./partner.html">Partner</a></li>
-                <li class="navigation-item"><a href="./contact-us.html">Contact</a></li>
-            </ul>
-        </div>
-    
-        <div class="membership-drive">
-            <span class="membership-drive-text">Membership Drive</span>
-        </div>
-    
+        <div class="navbar-toggle">☰</div>
+      </div>
+
+      <div class="navbar-bottom">
+        <ul id="navigation" class="navigation">
+          <li class="navigation-item active">
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="navigation-item">
+            <a href="./about.html">About Us</a>
+          </li>
+          <li class="navigation-item">
+            <a id="active" href="./team.html">Team</a>
+          </li>
+          <li class="navigation-item">
+            <a href="./events.html">Event</a>
+          </li>
+          <li class="navigation-item">
+            <a href="./partner.html">Partner</a>
+          </li>
+          <li class="navigation-item">
+            <a href="./contact-us.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="membership-drive membership-link">
+        <span class="membership-drive-text membership-link"
+          >Membership Drive</span
+        >
+      </div>
     </nav>
-    
+
     <!---------------Sub-Hero-Section------------->
-    
+
     <section class="sub-hero-section">
-        <div class="page-info">
-            <h2 class="page-heading">About Us</h2>
-            <div class="links">
-                <a class="home-link" href="../index.html">Home</a>
-                <span class="arrow-icon"> <i class="fas fa-chevron-right"></i> </span>
-                <span class="current-page">Team</span>
-            </div>
+      <div class="page-info">
+        <h2 class="page-heading">About Us</h2>
+        <div class="links">
+          <a class="home-link" href="../index.html">Home</a>
+          <span class="arrow-icon"> <i class="fas fa-chevron-right"></i> </span>
+          <span class="current-page">Team</span>
         </div>
+      </div>
     </section>
 
     <!---------------TEAM SECTION------------------->
 
     <section class="team-section">
-        <div class="teams-header">
-            <h2 class="teams-heading">Our Amazing Team</h2>
-            <p class="meet-members">Meet With Core Members</p>
+      <div class="teams-header">
+        <h2 class="teams-heading">Our Amazing Team</h2>
+        <p class="meet-members">Meet With Core Members</p>
+      </div>
+
+      <div class="team-members">
+        <div class="team-member-card">
+          <div class="team-member-image">
+            <img src="../images/founder.jpg" alt="" />
+          </div>
+
+          <h2 class="member-name">Joe Jackson</h2>
+          <p class="member-position">Founder</p>
+
+          <div class="member-social-accounts">
+            <a href="">
+              <i class="member-social-icon fab fa-facebook-f"></i>
+            </a>
+            <a href="">
+              <i class="member-social-icon fab fa-twitter"></i>
+            </a>
+            <a href="">
+              <i class="member-social-icon fab fa-linkedin-in"></i>
+            </a>
+          </div>
         </div>
 
-        <div class="team-members">
-            
-            <div class="team-member-card">
-                <div class="team-member-image">
-                    <img src="../images/usman.jpeg" alt="">
-                </div>
-            
-                <h2 class="member-name">Usman Ayub</h2>
-                <p class="member-position">Founder</p>
-            
-                <div class="member-social-accounts">
-                    <a href="">
-                        <i class="member-social-icon fab fa-facebook-f"></i>
-                    </a>
-                    <a href="">
-                        <i class="member-social-icon fab fa-twitter"></i>
-                    </a>
-                    <a href="">
-                        <i class="member-social-icon fab fa-linkedin-in"></i>
-                    </a>
-                </div>
-            </div>
+        <div class="team-member-card">
+          <div class="team-member-image">
+            <img src="../images/cofounder.jpg" alt="" />
+          </div>
 
-            <div class="team-member-card">
-                <div class="team-member-image">
-                    <img src="../images/umer.jpg" alt="">
-                </div>
+          <h2 class="member-name">Miles Mores</h2>
+          <p class="member-position">Co-Founder</p>
 
-                <h2 class="member-name">Umer Mughal</h2>
-                <p class="member-position">Co-Founder</p>
-
-                <div class="member-social-accounts">
-                    <a href="">
-                        <i class="member-social-icon fab fa-facebook-f"></i>
-                    </a>
-                    <a href="">
-                        <i class="member-social-icon fab fa-twitter"></i>
-                    </a>
-                    <a href="">
-                        <i class="member-social-icon fab fa-linkedin-in"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="team-member-card">
-                <div class="team-member-image">
-                    <img src="../images/waqas.jpg" alt="">
-                </div>
-            
-                <h2 class="member-name">Waqas Ahmed</h2>
-                <p class="member-position">Management Head</p>
-            
-                <div class="member-social-accounts">
-                    <a href="">
-                        <i class="member-social-icon fab fa-facebook-f"></i>
-                    </a>
-                    <a href="">
-                        <i class="member-social-icon fab fa-twitter"></i>
-                    </a>
-                    <a href="">
-                        <i class="member-social-icon fab fa-linkedin-in"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="team-member-card">
-                <div class="team-member-image">
-                    <img src="../images/hunny.jpg" alt="">
-                </div>
-            
-                <h2 class="member-name">Annas Mughal</h2>
-                <p class="member-position">General Secretary</p>
-            
-                <div class="member-social-accounts">
-                    <a href="">
-                        <i class="member-social-icon fab fa-facebook-f"></i>
-                    </a>
-                    <a href="">
-                        <i class="member-social-icon fab fa-twitter"></i>
-                    </a>
-                    <a href="">
-                        <i class="member-social-icon fab fa-linkedin-in"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="team-member-card">
-                <div class="team-member-image">
-                    <img src="../images/ismail.jpeg" alt="">
-                </div>
-            
-                <h2 class="member-name">Ismail</h2>
-                <p class="member-position">Advisory Chairman</p>
-            
-                <div class="member-social-accounts">
-                    <a href="">
-                        <i class="member-social-icon fab fa-facebook-f"></i>
-                    </a>
-                    <a href="">
-                        <i class="member-social-icon fab fa-twitter"></i>
-                    </a>
-                    <a href="">
-                        <i class="member-social-icon fab fa-linkedin-in"></i>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="team-member-card">
-                <div class="team-member-image">
-                    <img src="../images/tufail.jpeg" alt="">
-                </div>
-            
-                <h2 class="member-name">Tufail Arshi</h2>
-                <p class="member-position">Marketing Head</p>
-            
-                <div class="member-social-accounts">
-                    <a href="">
-                        <i class="member-social-icon fab fa-facebook-f"></i>
-                    </a>
-                    <a href="">
-                        <i class="member-social-icon fab fa-twitter"></i>
-                    </a>
-                    <a href="">
-                        <i class="member-social-icon fab fa-linkedin-in"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="team-member-card">
-                <div class="team-member-image">
-                    <img src="../images/mb.jpg" alt="">
-                </div>
-            
-                <h2 class="member-name">Muhammad Bin Tariq</h2>
-                <p class="member-position">Ambassador Head</p>
-            
-                <div class="member-social-accounts">
-                    <a href="">
-                        <i class="member-social-icon fab fa-facebook-f"></i>
-                    </a>
-                    <a href="">
-                        <i class="member-social-icon fab fa-twitter"></i>
-                    </a>
-                    <a href="">
-                        <i class="member-social-icon fab fa-linkedin-in"></i>
-                    </a>
-                </div>
-            </div>
-
+          <div class="member-social-accounts">
+            <a href="">
+              <i class="member-social-icon fab fa-facebook-f"></i>
+            </a>
+            <a href="">
+              <i class="member-social-icon fab fa-twitter"></i>
+            </a>
+            <a href="">
+              <i class="member-social-icon fab fa-linkedin-in"></i>
+            </a>
+          </div>
         </div>
 
+        <div class="team-member-card">
+          <div class="team-member-image">
+            <img src="../images/management-head.jpg" alt="" />
+          </div>
+
+          <h2 class="member-name">Jessica Shaw</h2>
+          <p class="member-position">Management Head</p>
+
+          <div class="member-social-accounts">
+            <a href="">
+              <i class="member-social-icon fab fa-facebook-f"></i>
+            </a>
+            <a href="">
+              <i class="member-social-icon fab fa-twitter"></i>
+            </a>
+            <a href="">
+              <i class="member-social-icon fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="team-member-card">
+          <div class="team-member-image">
+            <img src="../images/general-secretary.jpg" alt="" />
+          </div>
+
+          <h2 class="member-name">Jacob</h2>
+          <p class="member-position">General Secretary</p>
+
+          <div class="member-social-accounts">
+            <a href="">
+              <i class="member-social-icon fab fa-facebook-f"></i>
+            </a>
+            <a href="">
+              <i class="member-social-icon fab fa-twitter"></i>
+            </a>
+            <a href="">
+              <i class="member-social-icon fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="team-member-card">
+          <div class="team-member-image">
+            <img src="../images/advisory-chairman.jpg" alt="" />
+          </div>
+
+          <h2 class="member-name">Emilia</h2>
+          <p class="member-position">Advisory Chairman</p>
+
+          <div class="member-social-accounts">
+            <a href="">
+              <i class="member-social-icon fab fa-facebook-f"></i>
+            </a>
+            <a href="">
+              <i class="member-social-icon fab fa-twitter"></i>
+            </a>
+            <a href="">
+              <i class="member-social-icon fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="team-member-card">
+          <div class="team-member-image">
+            <img src="../images/marketing-head.jpg" alt="" />
+          </div>
+
+          <h2 class="member-name">Terry</h2>
+          <p class="member-position">Marketing Head</p>
+
+          <div class="member-social-accounts">
+            <a href="">
+              <i class="member-social-icon fab fa-facebook-f"></i>
+            </a>
+            <a href="">
+              <i class="member-social-icon fab fa-twitter"></i>
+            </a>
+            <a href="">
+              <i class="member-social-icon fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="team-member-card">
+          <div class="team-member-image">
+            <img src="../images/ambassador-head.jpg" alt="" />
+          </div>
+
+          <h2 class="member-name">Muhammad Bin Tariq</h2>
+          <p class="member-position">Ambassador Head</p>
+
+          <div class="member-social-accounts">
+            <a href="">
+              <i class="member-social-icon fab fa-facebook-f"></i>
+            </a>
+            <a href="">
+              <i class="member-social-icon fab fa-twitter"></i>
+            </a>
+            <a href="">
+              <i class="member-social-icon fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- -------------CONTACT SECTION--------------------->
-    
+
     <section class="contact-section">
-        <div class="contact-email-content">
-            <h2 class="email-heading">
-                Contact Us
-            </h2>
-    
-            <h5 class="contact-location">Lahore, Pakistan</h5>
-    
-            <p class="email-text">Email: <span class="email">info@gamehub.com</span></p>
-    
-        </div>
-    
-        <div class="map-section">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.561312067554!2d74.2968407146292!3d31.453741957577318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190145ae97af17%3A0x6d1f02b5cd2ab9f7!2sUniversity%20of%20Education%2C%20Lahore!5e0!3m2!1sen!2s!4v1606143341533!5m2!1sen!2s"
-                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0">
-            </iframe>
-        </div>
+      <div class="contact-email-content">
+        <h2 class="email-heading">Contact Us</h2>
+
+        <h5 class="contact-location">Lahore, Pakistan</h5>
+
+        <p class="email-text">
+          Email: <span class="email">info@gamehub.com</span>
+        </p>
+      </div>
+
+      <div class="map-section">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.561312067554!2d74.2968407146292!3d31.453741957577318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190145ae97af17%3A0x6d1f02b5cd2ab9f7!2sUniversity%20of%20Education%2C%20Lahore!5e0!3m2!1sen!2s!4v1606143341533!5m2!1sen!2s"
+          width="600"
+          height="450"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        >
+        </iframe>
+      </div>
     </section>
-    
+
     <!----------------FOOTER------------------->
-    
+
     <footer class="footer">
-        <div class="copyright-text">
-            Copyright © <span class="copyright-year">2020</span> All rights reserved | GameHub
-        </div>
-    
-        <div class="footer-icons">
-            <i class="footer-social-icon fab fa-facebook-f"></i>
-            <i class="footer-social-icon fab fa-twitter"></i>
-            <i class="footer-social-icon fab fa-linkedin-in"></i>
-            <i class="footer-social-icon fab fa-instagram"></i>
-            <i class="footer-social-icon far fa-envelope"></i>
-        </div>
+      <div class="copyright-text">
+        Copyright © <span class="copyright-year">2020</span> All rights reserved
+        | GameHub
+      </div>
+
+      <div class="footer-icons">
+        <i class="footer-social-icon fab fa-facebook-f"></i>
+        <i class="footer-social-icon fab fa-twitter"></i>
+        <i class="footer-social-icon fab fa-linkedin-in"></i>
+        <i class="footer-social-icon fab fa-instagram"></i>
+        <i class="footer-social-icon far fa-envelope"></i>
+      </div>
     </footer>
-    
+
     <!-----------------scripts--------------->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="../scripts/index.js"></script>
-
-</body>
+    <script src="../scripts/modal.js"></script>
+  </body>
 </html>
